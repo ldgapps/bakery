@@ -1,0 +1,16 @@
+.tab-pane{
+    -fx-font-family:"Roboto";
+}
+.text-field{
+	-fx-font-family:"Roboto";
+}
+.combo-box{
+	-fx-font-family:"Roboto Light";
+}
+.label{
+	-fx-font-family:"Roboto";
+}
+.input-focused-line {
+	-fx-background-color: #eda80b;
+	-fx-pref-height: 2px;
+}

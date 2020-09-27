@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Editar.EditarproductoEvent">
+   <children>
+      <Label alignment="CENTER" focusTraversable="false" layoutY="2.0" prefHeight="25.0" prefWidth="272.0" style="-fx-background-color: #eda80b;" text="Editar producto" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="24.0" layoutY="234.0" onAction="#salir" style="-fx-background-color: #d02323;" text="Salir" textFill="WHITE" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="24.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ic_reply_white_24dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="274.0" layoutY="234.0" onAction="#edita" style="-fx-background-color: #3480bf;" text="Cambiar" textFill="WHITE" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="31.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/agregar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="codigo" alignment="CENTER" layoutX="19.0" layoutY="100.0" prefHeight="20.0" prefWidth="135.0" text="">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <JFXTextField fx:id="producton" layoutX="284.0" focusColor="#eba40c" layoutY="97.0" prefHeight="17.0" prefWidth="135.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d7d374" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <JFXTextField fx:id="marcan" layoutX="19.0" focusColor="#eba40c" layoutY="183.0" >
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d7d374" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="19.0" layoutY="157.0" prefHeight="20.0" prefWidth="135.0" style="-fx-background-color: #eda80b;" text="Marca" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="17.0" layoutY="64.0" prefHeight="20.0" prefWidth="135.0" style="-fx-background-color: #eda80b;" text="Codigo" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="286.0" layoutY="64.0" prefHeight="20.0" prefWidth="135.0" style="-fx-background-color: #eda80b;" text="Producto" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="284.0" layoutY="157.0" prefHeight="20.0" prefWidth="135.0" style="-fx-background-color: #eda80b;" text="Tipo" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="tipo" alignment="CENTER" layoutX="284.0" layoutY="187.0" prefHeight="20.0" prefWidth="135.0" text="Tipo2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="error" alignment="CENTER" layoutX="-3.0" layoutY="236.0" prefHeight="17.0" prefWidth="456.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

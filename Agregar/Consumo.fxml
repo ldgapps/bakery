@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Agregar.ConsumoEvent">
+   <children>
+      <JFXComboBox fx:id="tipo" focusColor="#eba40c" layoutX="32.0" layoutY="110.0" prefHeight="25.0" prefWidth="135.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d8e85e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <JFXComboBox fx:id="producto" focusColor="#eba40c" layoutX="277.0" layoutY="110.0" prefHeight="25.0" prefWidth="195.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d8e85e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <JFXTextField fx:id="canti" layoutX="32.0" layoutY="210.0" prefHeight="25.0" prefWidth="135.0">
+      	<unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d7d374" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutY="4.0" prefHeight="20.0" prefWidth="500.0" style="-fx-background-color: #eda80b;" text="Nuevo consumo interno" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="32.0" layoutY="74.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #eda80b;" text="Tipo de producto" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="276.0" layoutY="74.0" prefHeight="20.0" prefWidth="195.0" style="-fx-background-color: #eda80b;" text="Producto" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="33.0" layoutY="175.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #eda80b;" text="Cantidad" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="24.0" layoutY="318.0" mnemonicParsing="false" onAction="#salir" style="-fx-background-color: #d02323;" text="Salir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ic_reply_white_24dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <JFXButton layoutX="353.0" layoutY="318.0" onAction="#agregar" style="-fx-background-color: #3480bf;" text="Agregar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/agregar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="error" layoutX="275.0" layoutY="197.0" prefHeight="17.0" prefWidth="195.0" text="accc">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

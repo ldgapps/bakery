@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Editar.EditarprecioEvent">
+   <children>
+      <Label alignment="CENTER" focusTraversable="false" layoutY="2.0" prefHeight="25.0" prefWidth="272.0" style="-fx-background-color: #eda80b;" text="Editar precios" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="tipo" onHiding="#setProducto" focusColor="#eba40c" layoutX="23.0" layoutY="81.0" prefWidth="150.0" AnchorPane.leftAnchor="23.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d7d374" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <JFXComboBox fx:id="producto" onHiding="#setPrecio"  focusColor="#eba40c" layoutX="211.0" layoutY="106.0" prefHeight="25.0" prefWidth="158.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="31.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d7d374" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <JFXTextField fx:id="nprecio" editable="true" focusColor="#eba40c" layoutX="211.0" layoutY="179.0" prefHeight="25.0" prefWidth="158.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="31.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d7d374" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <Label fx:id="vprecio" alignment="CENTER" layoutX="23.0" layoutY="183.0" prefHeight="17.0" prefWidth="149.0" text="0.00" AnchorPane.leftAnchor="23.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="211.0" layoutY="154.0" prefHeight="20.0" prefWidth="158.0" style="-fx-background-color: #eda80b;" text="Nuevo precio" textFill="WHITE" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="31.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="154.0" prefHeight="20.0" prefWidth="149.0" style="-fx-background-color: #eda80b;" text="Precio" textFill="WHITE" AnchorPane.leftAnchor="24.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="211.0" layoutY="48.0" prefHeight="20.0" prefWidth="158.0" style="-fx-background-color: #eda80b;" text="Producto" textFill="WHITE" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="31.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="48.0" prefHeight="20.0" prefWidth="149.0" style="-fx-background-color: #eda80b;" text="Tipo de producto" textFill="WHITE" AnchorPane.leftAnchor="23.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <JFXButton layoutX="23.0" layoutY="247.0" onAction="#salir" style="-fx-background-color: #d02323;" text="Salir" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="23.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ic_reply_white_24dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="330.0" layoutY="247.0" onAction="#cambio" style="-fx-background-color: #3480bf;" text="Cambiar" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="31.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/agregar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="error" alignment="CENTER" layoutY="227.0" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <JFXTextField fx:id="busqueda" onKeyReleased="#setProducto" editable="true" focusColor="#eba40c" layoutX="209.0" layoutY="69.0" prefHeight="25.0" prefWidth="238.0" >
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d7d374" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+   </children>
+</AnchorPane>

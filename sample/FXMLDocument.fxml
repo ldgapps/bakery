@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchorPane" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" alignment="CENTER" layoutY="458.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="450.0" textFill="#cd3434">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="150.0" layoutY="408.0" onAction="#iniciar" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #eda80b;" stylesheets="@../css/ButtonStyle.css" text="Iniciar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+        <JFXTextField fx:id="usuario" alignment="CENTER" focusColor="#eba40c" layoutX="150.0" layoutY="306.0" prefHeight="25.0" prefWidth="150.0">
+            <unFocusColor>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#eda80b" />
+                        <Stop color="#d7d374" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </unFocusColor>
+            <font>
+                <Font size="13.0" />
+            </font>
+        </JFXTextField>
+      <JFXPasswordField fx:id="contra" alignment="CENTER" focusColor="#eda80b" layoutX="151.0" layoutY="372.0" prefWidth="150.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eda80b" />
+                  <Stop color="#d7d374" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font size="13.0" />
+         </font></JFXPasswordField>
+
+      <Label alignment="CENTER" focusTraversable="false" layoutX="151.0" layoutY="281.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #eda80b;" text="Usuario" textFill="WHITE" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="149.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" focusTraversable="false" layoutX="150.0" layoutY="347.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #eda80b;" text="Contraseña" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="101.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="192.0" fitWidth="120.0" layoutY="-3.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" rotate="180.0" smooth="false">
+         <image>
+            <Image url="@../fondo.png" />
+         </image>
+         <viewport>
+            <Rectangle2D height="100.0" width="100.0" />
+         </viewport>
+         <effect>
+            <ColorAdjust contrast="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="192.0" fitWidth="120.0" layoutX="330.0" layoutY="380.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../fondo.png" />
+         </image>
+         <viewport>
+            <Rectangle2D height="100.0" width="100.0" />
+         </viewport>
+         <effect>
+            <ColorAdjust contrast="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="192.0" fitWidth="120.0" layoutX="330.0" layoutY="-3.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" rotate="180.0" smooth="false">
+         <image>
+            <Image url="@../fondo.png" />
+         </image>
+         <viewport>
+            <Rectangle2D height="100.0" width="100.0" />
+         </viewport>
+         <effect>
+            <ColorAdjust contrast="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="192.0" fitWidth="120.0" layoutY="380.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../fondo.png" />
+         </image>
+         <viewport>
+            <Rectangle2D height="100.0" width="100.0" />
+         </viewport>
+         <effect>
+            <ColorAdjust contrast="1.0" />
+         </effect>
+      </ImageView>
+    </children>
+</AnchorPane>
